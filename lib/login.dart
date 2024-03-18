@@ -53,6 +53,7 @@ class LoginScreen extends StatelessWidget {
                   height: 15,
                 ),
                 ElevatedButton(
+                  key: const Key('loginButton'),
                     style: ElevatedButton.styleFrom(
                         padding: const EdgeInsets.all(20)),
                     onPressed: () async {

@@ -1,6 +1,8 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:realm/realm.dart';
+
 import 'package:shopping/login.dart';
 import 'package:shopping/service/user_service.dart';
 import 'package:shopping/signup.dart';
@@ -8,14 +10,17 @@ import 'package:shopping/signup.dart';
 class SplashScreen extends StatelessWidget {
   final UserService userService;
 
-  const SplashScreen({Key? key, required this.userService});
+  const SplashScreen({
+    Key? key,
+    required this.userService,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
         child: Padding(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -31,6 +36,7 @@ class SplashScreen extends StatelessWidget {
                 height: 30,
               ),
               ElevatedButton(
+                key: const Key('loginButton'),
                   style: ElevatedButton.styleFrom(
                       padding: const EdgeInsets.all(20)),
                   onPressed: () async {

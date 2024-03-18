@@ -5,8 +5,6 @@ class UserService {
 
   UserService(this.atlasApp);
 
-  searchUser({required String email}) {}
-
   Future<User> createUser(String email, String password) async {
     EmailPasswordAuthProvider authProvider =
         EmailPasswordAuthProvider(atlasApp);
