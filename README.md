@@ -1,4 +1,4 @@
-# shopping
+# shopping cart with a offline functionality and automatically sync with a Mongodb cloud 
 
 A new Flutter project.
 
